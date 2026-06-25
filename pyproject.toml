@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "consistent-dm-video"
+version = "0.1.0"
+description = "CLI scaffold for planning consistent-character diffusion-model video batches with voice-consent safeguards."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "BSD-2-Clause"}
+authors = [{name = "sougatadutta7902-ai"}]
+dependencies = []
+
+[project.scripts]
+consistent-dm-video = "consistent_dm_video.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
